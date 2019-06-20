@@ -1,0 +1,18 @@
+// Exercise:
+const makeNuclearButton = () => {
+  let timeWithoutDestruction = 0;
+  const passTime = () => timeWithoutDestruction++;
+  const totalPeaceTime = () => timeWithoutDestruction;
+  const launch = () => {
+    timeWithoutDestruction = -1;
+    return "💥";
+  };
+
+  setInterval(passTime, 1000);
+  return { totalPeaceTime, launch };
+};
+
+const ww3 = makeNuclearButton();
+console.log(ww3.totalPeaceTime());
+//ww3.totalPeaceTime()
+ww3.launch();
