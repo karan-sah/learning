@@ -1,0 +1,14 @@
+/**
+ *
+ *  Try to complete the following ：
+ *
+ *  input： array，eg: [1, 2, 3, 4]
+ *
+ *  Outout：After a repetition array，E.g：[1, 2, 3 , 4, 1, 2, 3 ,4]
+ *
+ **/
+function duplicate(array) {
+
+    array = array.concat(array);
+    return array;
+}
